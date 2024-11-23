@@ -23,3 +23,6 @@ nav:
     - Introduction: path-to-a-tcer/introduction.md
     - Skills: path-to-a-tcer/skills.md
     - Tools: path-to-a-tcer/tools.md
+# mkdocs.yml
+remote_branch: gh-pages    # GitHub Pages 分支
+remote_name: origin       # 远程仓库名
