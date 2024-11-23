@@ -25,7 +25,7 @@ nav:
     - Tools: path-to-a-tcer/tools.md
 # mkdocs.yml
 remote_branch: gh-pages    # GitHub Pages 分支
-remote_name: tc_learning_path       # 远程仓库名
+remote_name: origin       # 远程仓库名
 # mkdocs.yml
 site_url: https://tccqupt.github.io/tc_learning_path/
 repo_url: https://github.com/TCCQUPT/tc_learning_path
