@@ -19,10 +19,25 @@ plugins:
 # copyright: Copyright &copy; Technical Communication Society in CQUPT # 左下角的版权声明
 nav:
   - Welcome: index.md
-  - PATH TO A TCER: 
-    - Introduction: path-to-a-tcer/introduction.md
-    - Skills: path-to-a-tcer/skills.md
-    - Tools: path-to-a-tcer/tools.md
+  - Prerequisites: prerequisites.md
+  - Introduction: introduction.md
+  - git-and-github : 
+      - What is Git&GitHub: basics.md
+      - Why to use: collaboration.md
+      - How to use: commands.md
+  - markdown:
+      - What is Markdown: intro.md
+      - How to use: formatting.md
+      - Why to use: examples.md
+  - mkdocs:
+      - What is MkDocs: intro.md
+      - How to use: setup.md
+      - Customization: customization.md
+  - workflow:
+      - Doc-like-code: doc-like-code.md
+      - Example: example-workflow.md
+      - Practice: best-practice.md
+  - Resources: resources.md    
 # mkdocs.yml
 remote_branch: gh-pages    # GitHub Pages 分支
 remote_name: origin       # 远程仓库名
