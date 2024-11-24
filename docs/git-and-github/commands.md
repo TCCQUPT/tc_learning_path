@@ -1,4 +1,4 @@
-Common Git Commands Cheat Sheet
+# Common Git Commands Cheat Sheet
 
 Command	What it Does
 git init	Start a Git project in your folder.

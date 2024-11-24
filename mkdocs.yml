@@ -26,17 +26,17 @@ nav:
       - Why to use: git-and-github/collaboration.md
       - How to use: git-and-github/commands.md
   - markdown:
-      - What is Markdown: intro.md
-      - How to use: formatting.md
-      - Why to use: examples.md
+      - What is Markdown: markdown/intro.md
+      - How to use: markdown/formatting.md
+      - Why to use: markdown/examples.md
   - mkdocs:
-      - What is MkDocs: intro.md
-      - How to use: setup.md
-      - Customization: customization.md
+      - What is MkDocs: mkdocs/intro.md
+      - How to use: mkdocs/setup.md
+      - Customization: mkdocs/customization.md
   - workflow:
-      - Doc-like-code: doc-like-code.md
-      - Example: example-workflow.md
-      - Practice: best-practice.md
+      - Doc-like-code: workflows/doc-like-code.md
+      - Example: workflows/example-workflow.md
+      - Practice: workflows/best-practice.md
   - Resources: resources.md    
 # mkdocs.yml
 remote_branch: gh-pages    # GitHub Pages 分支
