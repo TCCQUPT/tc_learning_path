@@ -22,9 +22,9 @@ nav:
   - Prerequisites: prerequisites.md
   - Introduction: introduction.md
   - git-and-github : 
-      - What is Git&GitHub: basics.md
-      - Why to use: collaboration.md
-      - How to use: commands.md
+      - What is Git&GitHub: ./git-and-github/basics.md
+      - Why to use: ./git-and-github/collaboration.md
+      - How to use: ./git-and-github/commands.md
   - markdown:
       - What is Markdown: intro.md
       - How to use: formatting.md
