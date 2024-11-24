@@ -5,4 +5,3 @@ Tools to Install:
 Git: A version control system.
 MkDocs: A tool for building documentation websites.
 A text editor like VS Code.
-
