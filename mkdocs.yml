@@ -19,8 +19,8 @@ plugins:
 # copyright: Copyright &copy; Technical Communication Society in CQUPT # 左下角的版权声明
 nav:
   - Welcome: index.md
-  - Prerequisites: prerequisites.md
   - Introduction: introduction.md
+  - Prerequisites: prerequisites.md
   - git-and-github : 
       - What is Git&GitHub: git-and-github/basics.md
       - Why to use: git-and-github/collaboration.md
