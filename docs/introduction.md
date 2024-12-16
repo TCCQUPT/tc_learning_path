@@ -17,4 +17,3 @@ Here the code means code in Github that will be introduced in the next part. Wha
 This workflow leans heavily on Git and GitHub.
 
 Writing and managing documents like code ensures better collaboration, version control, and automation.
-
