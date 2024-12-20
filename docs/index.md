@@ -16,6 +16,5 @@ This guide is intended for those who are **students on the path of learning tech
 
 For the former, I hope this guide sparks your interest in the docs-like-code methodology, fostering further communication and mutual learning. For the latter, I hope this guide can bring you new ideas on your own workflow.
 
-## Note
-
-This guide is finished by Ray, who are a normal student interested in Technical Writing. All the contents are based on my experience and perspectives, so if any mistakes are found, welcome to any contributions on [the project](https://github.com/TCCQUPT/tc_learning_path).
+!!! note "Note"
+    This guide is finished by Ray, who are a normal student interested in Technical Writing. All the contents are based on my experience and perspectives, so if any mistakes are found, welcome to any contributions on [the project](https://github.com/TCCQUPT/tc_learning_path).

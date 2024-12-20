@@ -20,7 +20,7 @@ Mostly, programmer write and manage code in the following process and tools:
 4. Tracking issues in Github
 5. Publish automatically with CI/CD systems like Github Actions.
 
-Then, docs-like-code approach encourage us to write documents in the same process and related tools. You can see that this workflow leans heavily on Git and GitHub, which will be introduced in detail.
+Then, docs-like-code approach encourage us to write documents in the same process and related tools. You can see that this workflow leans heavily on [Git and GitHub](./git-and-github/basics.md), which will be introduced in detail.
 
 For more detailed purposes and introduction, you can read the book Docs-Like-Code. This guide is mainly focused on practices.
 
