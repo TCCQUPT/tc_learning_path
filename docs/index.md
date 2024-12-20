@@ -12,6 +12,10 @@ I have always wanted to create this guide on docs-like-code for three main reaso
 
 ## Who Is This Guide For?
 
-This guide is intended for those who are new to either GitHub or the concept of technical writing (but I will focus on the workflow of docs-like-code rather than a comprehensive introduction to technical writing).
+This guide is intended for those who are **students on the path of learning technical writing or TCer but new to either docs-like-code approach**.
 
-I hope this guide sparks your interest in the docs-like-code methodology, fostering further communication and mutual learning.
+For the former, I hope this guide sparks your interest in the docs-like-code methodology, fostering further communication and mutual learning. For the latter, I hope this guide can bring you new ideas on your own workflow.
+
+## Note
+
+This guide is finished by Ray, who are a normal student interested in Technical Writing. All the contents are based on my experience and perspectives, so if any mistakes are found, welcome to any contributions on [the project](https://github.com/TCCQUPT/tc_learning_path).

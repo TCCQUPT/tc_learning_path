@@ -21,6 +21,7 @@ nav:
   - Welcome: index.md
   - Introduction: introduction.md
   - Prerequisites: prerequisites.md
+  - References & Resources: resources.md
   - git-and-github : 
       - What is Git&GitHub: git-and-github/basics.md
       - Why to use: git-and-github/collaboration.md
@@ -36,8 +37,7 @@ nav:
   - workflow:
       - Doc-like-code: workflows/doc-like-code.md
       - Example: workflows/example-workflow.md
-      - Practice: workflows/best-practice.md
-  - Resources: resources.md    
+      - Practice: workflows/best-practice.md    
 # mkdocs.yml
 remote_branch: gh-pages    # GitHub Pages 分支
 remote_name: origin       # 远程仓库名
