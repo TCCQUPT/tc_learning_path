@@ -14,13 +14,13 @@ Then, what does the way that code goes?
 
 Mostly, programmer write and manage code in the following process and tools:
 
-1. Edit code in a IDE(Integrated Development Environment) like Visual Studio Code.
+1. Edit code in [an IDE(Integrated Development Environment)](prerequisites.md#download-visual-studio-code) like Visual Studio Code.
 2. Store and review code with code hosting platform like GitHub
 3. Collaborate and manage different versions with Git Branches.
 4. Tracking issues in Github
 5. Publish automatically with CI/CD systems like Github Actions.
 
-Then, docs-like-code approach encourage us to write documents in the same process and related tools. You can see that this workflow leans heavily on [Git and GitHub](./git-and-github/basics.md), which will be introduced in detail.
+Then, docs-like-code approach encourage us to write documents in the same process and related tools. You can see that this workflow leans heavily on [Git and GitHub](prerequisites.md#download-github-desktop), which will be introduced in detail.
 
 For more detailed purposes and introduction, you can read the book Docs-Like-Code. This guide is mainly focused on practices.
 
@@ -29,5 +29,8 @@ For more detailed purposes and introduction, you can read the book Docs-Like-Cod
 In this guide, there will be the following four parts discussed to introduce the docs-like-code workflow:
 
 1. **Git and GitHub**
+
+    - ni
 2. **Markdown**
-3. **Open-Source Frames**
+3. **Try Now**
+4. **Open-Source Frames**

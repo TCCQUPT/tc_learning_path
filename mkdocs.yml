@@ -3,6 +3,8 @@ theme:
   # language: zh
   name: material
   # name: mkdocs
+  # logo: assets/favicon.ico
+  favicon: assets/favicon.ico
   prev_next_buttons_location: bottom
   icon:
     admonition:
