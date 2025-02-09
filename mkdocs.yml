@@ -38,7 +38,7 @@ plugins:
 nav:
   - Welcome: index.md
   - Introduction: introduction.md
-  - Prerequisites: prerequisites.md
+  - Preparation: preparation.md
   - References & Resources: resources.md
   - git-and-github : 
       - What is Git&GitHub: git-and-github/basics.md
