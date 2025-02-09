@@ -17,7 +17,7 @@ Then, what does the way that code goes?
 
 Mostly, programmer write and manage code in the following process and tools:
 
-1. Edit code in [an IDE(Integrated Development Environment)](prerequisites.md#download-visual-studio-code) like Visual Studio Code.
+1. Edit code in [an IDE(Integrated Development Environment)](preparation.md#download-visual-studio-code) like Visual Studio Code.
 2. Store and review code with code hosting platform like GitHub
 3. Collaborate and manage different versions with Git Branches.
 4. Tracking issues in Github

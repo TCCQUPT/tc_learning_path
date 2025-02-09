@@ -32,6 +32,7 @@ theme:
 #   en: My Documentation
 #   zh: 我的文档
 plugins:
+  - glightbox
   - search:
       prebuild_index: true  # 预构建索引
 # copyright: Copyright &copy; Technical Communication Society in CQUPT # 左下角的版权声明
