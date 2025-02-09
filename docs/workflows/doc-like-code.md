@@ -1,4 +1,4 @@
-# What is Doc-Like-Code?
+# What is Doc-Like-Code?（这一部分不需要了）
 
 Doc-like-code means writing and managing documentation like software:
 
