@@ -2,11 +2,14 @@
 
 The tools we need to download are GitHub Desktop and Visual Studio Code.
 
-## Download GitHub Desktop
+## **Download GitHub Desktop**
 
-GitHub Desktop is an GitHub Desktop is a GUI application provided by GitHub that simplifies common Git operations, allowing users to manage Git repositories without using the command line. It is especially suitable for those who are not familiar with command-line tools.
+GitHub Desktop is an GitHub Desktop is a GUI application provided by GitHub that simplifies common Git operations, allowing users to manage Git repositories without using the command line. It is especially suitable for those who are not familiar with command-line tools. [**Clike to view download page**](https://desktop.github.com/download/)
 
-给出GitHub Desktop的下载图片流程
+![github-desktop-download](assets/github-desktop-download.png){width="800"}
+///caption
+GitHub DeskTop Download Page
+///
 
 ## Download Visual Studio Code
 
@@ -14,4 +17,4 @@ Visual Studio Code(or VSCode) is an IDE(Integrated Development Environment) used
 
 Head to [the official website of VSCode](https://code.visualstudio.com/) and Click download.
 
-![vscode](.\assets\download-vscode.png)
+![vscode](.\assets\download-vscode.png){width="800"}

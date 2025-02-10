@@ -11,6 +11,7 @@ Regularly review and update content.
 
 然后讲workflow
     模拟真实的贡献流程看贡献文档，
-    -这里就可以说去某个demo的项目里面试试
+    pincap、fasscope是贡献的层面
+    这里就可以说去某个demo的项目里面试试
 
-最后的mkdocs就是一个practice，来验证的
+mkdocs是单独一个文档建立网站 - 独自简历文档网站/博客
