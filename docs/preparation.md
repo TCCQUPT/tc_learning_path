@@ -17,7 +17,7 @@ Visual Studio Code(or VSCode) is an IDE(Integrated Development Environment) used
 
 Head to [the official website of VSCode](https://code.visualstudio.com/) and Click download.
 
-![vscode-download](download-vscode.png){width="800"}
+![vscode-download](assets/download-vscode.png){width="800"}
 ///caption
 Visual Studio Code Download Page
 ///
