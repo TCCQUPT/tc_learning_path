@@ -1,8 +1,8 @@
 # Preparation
 
-The tools we need to download are GitHub Desktop and Visual Studio Code.
+The tools we need to download are GitHub Desktop and Visual Studio Code. 还需要注册一个GitHub的账号.
 
-## **Download GitHub Desktop**
+## Download GitHub Desktop
 
 GitHub Desktop is an GitHub Desktop is a GUI application provided by GitHub that simplifies common Git operations, allowing users to manage Git repositories without using the command line. It is especially suitable for those who are not familiar with command-line tools. [**Clike to view download page**](https://desktop.github.com/download/)
 
