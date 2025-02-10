@@ -30,16 +30,16 @@ For more detailed purposes and introduction, you can read the book Docs-Like-Cod
 
 This guide is designed to help you master the **Docs Like Code** workflow through the following key sections:
 
-1. **Git & GitHub**
+1. [**Git & GitHub**](git-and-github/basics.md### What is Git?)
     - Introduction: Git and GitHub for version control.
     - Collaboration workflows: Pull Requests, branching, and team collaboration
     - GitHub Desktop: A graphical user interface for easier Git management
 
-2. **Markdown Essentials**
+2. [**Markdown Essentials**](markdown/intro.md#introduction-to-markdown)
     - Introduction: Markdown syntax for lightweight documentation.
     - Advanced formatting: Tables, code blocks, diagrams ...
 
-3. **Docs Like Code Workflow**
+3. [**Docs Like Code Workflow**](workflows/doc-like-code.md#what-is-doc-like-code)
     - End-to-end workflow: From writing to publishing.
     - Real-world examples: Explore open-source projects that use Docs Like Code.
     - Hands-on practice: Create your first Pull Request and experience the "Hello World" of Docs Like Code.
