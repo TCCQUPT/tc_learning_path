@@ -30,6 +30,10 @@ For more detailed purposes and introduction, you can read the book Docs-Like-Cod
 
 This guide is designed to help you master the **Docs Like Code** workflow through the following key sections:
 
+!!!note "Note"
+
+    While the Docs-like-code workflow involves **more than just tools like Git and GitHub**, given the length of this document and GitHub's popularity, the focus here is primarily on Git and GitHub.
+
 1. [**Git & GitHub**](git-and-github/basics.md### What is Git?)
     - Introduction: Git and GitHub for version control.
     - Collaboration workflows: Pull Requests, branching, and team collaboration

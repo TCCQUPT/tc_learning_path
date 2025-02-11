@@ -38,14 +38,21 @@ Open source means making the source code of a project publicly available, allowi
 - **Quality**: More eyes on the code lead to fewer bugs and better solutions.
 - **Community**: Builds a global network of contributors and users.
 
-**Famous Open Source Projects** - 可以使用悬浮选取窗格的方式来进行呈现
+### Famous Open Source Projects
 
 Here are some well-known open-source projects you might have heard of:
 
-- **Linux**: The most popular open-source operating system.
-- **VS Code**: A powerful code editor developed by Microsoft.
-- **TensorFlow**: Google's open-source machine learning framework.
-- **React**: A JavaScript library for building user interfaces, maintained by Facebook.
+=== "Linux"
+    The most popular open-source operating system.
+=== "VS Code"
+    A powerful code editor developed by Microsoft.
+    ![alt text](../assets/download-vscode.png)
+=== "TensorFlow"
+    Google's open-source machine learning framework.
+=== "React"
+    A JavaScript library for building user interfaces, maintained by Facebook.
+=== "demo"
+    ![alt text](../assets/favicon.ico){ width=300 }
 
 ## How Git and GitHub Relate to Docs Like Code
 

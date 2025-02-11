@@ -42,9 +42,9 @@ nav:
   - Preparation: preparation.md
   - References & Resources: resources.md
   - git-and-github : 
-      - What is Git&GitHub: git-and-github/basics.md
-      - Why to use: git-and-github/collaboration.md
-      - How to use: git-and-github/commands.md
+      - What is Git&GitHub: git-and-github/git-introduction.md
+      - Why we use Git&GitHub: git-and-github/git-functions.md
+      - How to use Git&GitHub: git-and-github/git-desktop.md
   - markdown:
       - What is Markdown: markdown/intro.md
       - How to use: markdown/formatting.md
@@ -77,5 +77,8 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.blocks.caption
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
 
