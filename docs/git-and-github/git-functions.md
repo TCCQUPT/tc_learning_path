@@ -31,20 +31,13 @@ Then how the three layers enable git achieve version control and collaboration. 
 
 ## 2. The workflow of Git
 
-- **Forking**: When you fork a repository, you create your own copy to work on.
-  - Example: You fork a documentation project to add a new section.
+我们通过一个机器人的比喻来理解三个仓库间的联系，以及整个Git的工作流。
 
-- **Cloning**: After forking, you clone the repository to your local machine.
-  - Example: Use the command `git clone <repository-url>` to download the repository to your computer.
+- **Forking**: When you fork a repository, you create your own copy to work on. 由旗舰店开设分店，就是fork的过程，创建一个自己的副本。
 
-- **Pull**: Pull from the remote repository
-
-- **Branching**: Create a new branch for each task or feature.
-  - Example: Create a branch called `add-tutorial` to write a new tutorial.
+- **Cloning**: After forking, you clone the repository to your local computer. 你想要对机器人模型做出一定的修改，需要实操调试，所以在家里复制了一个机器人来调试。同时为了保证不破坏这个机器人样本，你再创建一个机器人副本，在这上面修改，这就是创建分支。
 
 - **Commits**: Each time you save a change, Git creates a "commit" (a snapshot of your project at that moment).
-  - Commits are like checkpoints in a video game—you can always go back to them if something goes wrong.
-  - Example: If you accidentally delete a file, you can revert to a previous commit to restore it.
 
 - **Pushing**: Once you've made changes, push them to your forked repository.
   - Example: Use the command `git push origin <branch-name>` to upload your changes.
@@ -52,27 +45,29 @@ Then how the three layers enable git achieve version control and collaboration. 
 - **Pull Requests**: When your changes are ready, submit a Pull Request (PR) to the original repository.
   - Example: The maintainers of the original project will review your changes and decide whether to merge them.
 
+- **merge**: 原始仓库的审核员审核后，会将你的修改合并进去。这时因为我们的修改是在本地进行的，所以很可能在我们修改的过程中，别人也对相同的部分进行了修改，这就会产生冲突。最终怎么合并，由原始仓库管理人员决定。
+
+- **Pull**: 这一步实际上实在创建分支后，每一次修改前，拉取最新的原始仓库到本地，保证你的修改是在最新的版本上进行的。Pull from the remote repository，你可能并不是一次就完成机器人修改，可能今天做两小时，明天做两小时，在你没做的时候，其他人也能通过以上流程对机器人修改，并提交到旗舰店且合并。所以每次编辑前，都要拉取最新的旗舰店模型，在最新的基础上进行修改。这时同样有可能产生冲突，至于是否由最新的覆盖掉，还是保留你自己的修改，由你自己决定。
+
 ## 3. How Git Enables Version Control and Collaboration
 
 ### Version Control
 
 每一次commit都能够追溯
 
+- Git tracks changes through **commits** and **branches**, enabling version control.
+
 ### Collaboration
 
 任何时间、任何地点、任何人都能够对原始仓库进行刚刚那一系列的工作流操作，同时因为各自在各自forked仓库中，各自创建的分支中，所以互不干扰，相互协作。
+
+- GitHub facilitates collaboration through **forking**, **Pull Requests**, and **code reviews**. - This workflow ensures that multiple people can work on the same project without conflicts.
 
 ## 4. Why This Workflow Works
 
 - **Isolation**: Each contributor works on their own fork and branches, avoiding conflicts.
 - **Transparency**: Every change is tracked, making it easy to see who did what and when.
 - **Collaboration**: Pull Requests encourage discussion and review, improving the quality of contributions.
-
-## Key Takeaways
-
-- Git tracks changes through **commits** and **branches**, enabling version control.
-- GitHub facilitates collaboration through **forking**, **Pull Requests**, and **code reviews**.
-- This workflow ensures that multiple people can work on the same project without conflicts.
 
 ## Next Steps
 
