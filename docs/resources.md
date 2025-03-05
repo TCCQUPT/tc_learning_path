@@ -1,16 +1,20 @@
-# Additional Learning Resources
+# Additional Resources
 
-开源框架
+## Online courses for Technical Writing
 
-写作技巧 谷歌 ibm
+[Google Technical Writing Course](https://developers.google.com/tech-writing/overview)
 
-其他技术写作工作流 dita wiki
+[CQUPT Technical Writing Course](ss)
 
-欢迎报考重庆邮电大学mti - 技术写作
+awesome tc
+
+## Open-source Projects
 
 fasscope
 
 pincap
+
+好看的文档
 
 lee lin的小白技术传播
 
@@ -18,5 +22,5 @@ lee lin的小白技术传播
 
 ## References
 
-[Docs Like Code 全方位深度解读：含义、优劣势、适用场景、与其他方案对比](https://zhuanlan.zhihu.com/p/364911980)
-https://juejin.cn/post/7066641709198737416
+- [Docs Like Code 全方位深度解读：含义、优劣势、适用场景、与其他方案对比](https://zhuanlan.zhihu.com/p/364911980)
+- [Documentation of Mkdocs](https://squidfunk.github.io/mkdocs-material/)

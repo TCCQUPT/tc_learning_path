@@ -1,6 +1,15 @@
 # Preparation
 
-The tools we need to download are GitHub Desktop and Visual Studio Code. 还需要注册一个GitHub的账号.
+We need to sign up a GitHub account first and download two tools: GitHub Desktop and Visual Studio Code.
+
+## A GitHub Account
+
+Head to [GitHub website](https://github.com/) and sign up an account.
+
+![github-desktop-download](assets/github-official-website.png){width="800"}
+///caption
+GitHub Official Website
+///
 
 ## Download GitHub Desktop
 
