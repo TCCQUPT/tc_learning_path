@@ -1,10 +1,13 @@
-# GitHub Desktop: Visualizing the Git Workflow
+# GitHub Desktop: Code-free Tools
 
 In the previous sections, we introduced Git and its workflows, such as cloning, branching, committing, and pushing changes. While these operations are powerful, they often require typing commands in a terminal, which can be intimidating for beginners.
 
-GitHub Desktop simplifies this process by providing a graphical interface for Git. It makes the entire workflow visual and intuitive, allowing you to focus on your work instead of memorizing commands.
+![Git-codes](../assets/git-codes.png)
+///caption
+intimidating Git codes
+///
 
-不然每一步都要在冰冷的终端中进行命令行输入 [给图]，所以可视化的好处就来了。
+GitHub Desktop simplifies this process by providing a graphical interface for Git. It makes the entire workflow visual and intuitive, allowing you to focus on your work instead of memorizing commands.
 
 ## Why Use GitHub Desktop?
 

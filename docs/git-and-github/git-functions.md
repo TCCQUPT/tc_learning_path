@@ -31,43 +31,39 @@ Then how the three layers enable git achieve version control and collaboration. 
 
 ## 2. The workflow of Git
 
-我们通过一个机器人的比喻来理解三个仓库间的联系，以及整个Git的工作流。
+We use a robot metaphor to understand the relationships between three repositories and the entire Git workflow.
 
-- **Forking**: When you fork a repository, you create your own copy to work on. 由旗舰店开设分店，就是fork的过程，创建一个自己的副本。
+- **Forking**: When you fork a repository, you create your own copy to work on.
+  - Creating a branch store by the flagship store is the process of forking, making a copy of your own.
 
-- **Cloning**: After forking, you clone the repository to your local computer. 你想要对机器人模型做出一定的修改，需要实操调试，所以在家里复制了一个机器人来调试。同时为了保证不破坏这个机器人样本，你再创建一个机器人副本，在这上面修改，这就是创建分支。
+- **Cloning**: After forking, you clone the repository to your local computer.
+  - To modify the robot model, you need hands-on debugging. You copy a robot to your home for adjustments. To avoid damaging the original robot sample, you create a duplicate robot to modify — this is creating a branch.
 
 - **Commits**: Each time you save a change, Git creates a "commit" (a snapshot of your project at that moment).
+  - Every time you make a modification (e.g., adjusting the robot’s arm), you take a "snapshot" of your changes. This snapshot is a commit.
 
 - **Pushing**: Once you've made changes, push them to your forked repository.
-  - Example: Use the command `git push origin <branch-name>` to upload your changes.
+  - After finalizing your robot’s arm design, you ship the modified robot back to your branch store. This is pushing your changes.
 
 - **Pull Requests**: When your changes are ready, submit a Pull Request (PR) to the original repository.
   - Example: The maintainers of the original project will review your changes and decide whether to merge them.
+  - You submit a design proposal to the flagship store, asking them to incorporate your arm design into their official model. This is a pull request.
 
-- **merge**: 原始仓库的审核员审核后，会将你的修改合并进去。这时因为我们的修改是在本地进行的，所以很可能在我们修改的过程中，别人也对相同的部分进行了修改，这就会产生冲突。最终怎么合并，由原始仓库管理人员决定。
+- **merge**: The original repository’s maintainers review your changes and decide whether to merge them.
+  - While you were modifying your local copy, others might have changed the same part of the robot, causing conflicts. The final decision on how to merge the changes lies with the flagship store’s managers.
 
-- **Pull**: 这一步实际上实在创建分支后，每一次修改前，拉取最新的原始仓库到本地，保证你的修改是在最新的版本上进行的。Pull from the remote repository，你可能并不是一次就完成机器人修改，可能今天做两小时，明天做两小时，在你没做的时候，其他人也能通过以上流程对机器人修改，并提交到旗舰店且合并。所以每次编辑前，都要拉取最新的旗舰店模型，在最新的基础上进行修改。这时同样有可能产生冲突，至于是否由最新的覆盖掉，还是保留你自己的修改，由你自己决定。
+- **Pull**: Before every time starting new modifications, always pull the latest version from the original repository to ensure your work is based on the newest updates.
+  - You might not finish modifying the robot in one go (e.g., working two hours today and two tomorrow). While you’re paused, others might modify and merge their changes into the flagship store’s model. Before editing again, always pull the latest model from the flagship store to avoid conflicts. You can choose whether to overwrite your changes with the latest version or keep your modifications.
 
 ## 3. How Git Enables Version Control and Collaboration
 
 ### Version Control
 
-每一次commit都能够追溯
-
-- Git tracks changes through **commits** and **branches**, enabling version control.
+Git tracks changes through commits and branches, enabling precise version control. Each commit records who made the change, when it was made, and a description of the modifications.
 
 ### Collaboration
 
-任何时间、任何地点、任何人都能够对原始仓库进行刚刚那一系列的工作流操作，同时因为各自在各自forked仓库中，各自创建的分支中，所以互不干扰，相互协作。
-
-- GitHub facilitates collaboration through **forking**, **Pull Requests**, and **code reviews**. - This workflow ensures that multiple people can work on the same project without conflicts.
-
-## 4. Why This Workflow Works
-
-- **Isolation**: Each contributor works on their own fork and branches, avoiding conflicts.
-- **Transparency**: Every change is tracked, making it easy to see who did what and when.
-- **Collaboration**: Pull Requests encourage discussion and review, improving the quality of contributions.
+Anyone can contribute to the original repository from anywhere, at any time. By working in their own forked repositories and branches, collaborators avoid interference and enable parallel development.
 
 ## Next Steps
 
