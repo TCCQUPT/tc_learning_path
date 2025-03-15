@@ -40,22 +40,14 @@ nav:
   - Welcome: index.md
   - Introduction: introduction.md
   - Preparation: preparation.md
-  - git-and-github : 
+  - Git-and-github : 
       - What is Git&GitHub: git-and-github/git-introduction.md
       - Why we use Git&GitHub: git-and-github/git-functions.md
       - How to use Git&GitHub: git-and-github/git-desktop.md
-  - markdown:
-      - What is Markdown: markdown/intro.md
-      - How to use: markdown/formatting.md
-      - Why to use: markdown/examples.md
-  - mkdocs:
-      - What is MkDocs: mkdocs/intro.md
-      - How to use: mkdocs/setup.md
-      - Customization: mkdocs/customization.md
-  - workflow:
-      - Doc-like-code: workflows/doc-like-code.md
-      - Example: workflows/example-workflow.md
-      - Practice: workflows/best-practice.md    
+  - Markdown: intro-to-md.md
+  - Workflow:
+      - Practice: workflows/best-practice.md
+      - Projects: workflows/example-workflow.md
   - References & Resources: resources.md
 # mkdocs.yml
 remote_branch: gh-pages    # GitHub Pages 分支
