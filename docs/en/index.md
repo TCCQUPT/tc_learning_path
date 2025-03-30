@@ -17,4 +17,4 @@ This guide is intended for those who are **students on the path of learning tech
 For the former, I hope this guide sparks your interest in the docs-like-code methodology, fostering further communication and mutual learning. For the latter, I hope this guide can bring you new ideas on your own workflow.
 
 !!! note "Note"
-    This guide is finished by Ray, who are a normal student interested in Technical Writing. All the contents are based on my experience and perspectives, so if any mistakes are found, welcome to any contributions on [the project](https://github.com/TCCQUPT/tc_learning_path).
+    This guide is finished by Ray, who are a normal student interested in Technical Writing. Designed for complete beginners to Git and aspiring open-source contributors, this introductory resource intentionally maintains a streamlined scope - it's not meant to be as comprehensive as traditional developer guides.  All the contents are based on my own experiences and perspectives, so if any mistakes are found, welcome to any feedback or contributions through [the project's GitHub repository](https://github.com/TCCQUPT/tc_learning_path).

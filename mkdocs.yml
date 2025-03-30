@@ -33,22 +33,32 @@ theme:
 #   zh: 我的文档
 plugins:
   - glightbox
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          name: English
+          build: true
+          default: true
+        - locale: zh
+          name: Chinese
+          build: true
   - search:
       prebuild_index: true  # 预构建索引
 # copyright: Copyright &copy; Technical Communication Society in CQUPT # 左下角的版权声明
 nav:
-  - Welcome: index.md
-  - Introduction: introduction.md
-  - Preparation: preparation.md
+  - Welcome: en/index.md
+  - Introduction: en/introduction.md
+  - Preparation: en/preparation.md
   - Git-and-github : 
-      - What is Git&GitHub: git-and-github/git-introduction.md
-      - Why we use Git&GitHub: git-and-github/git-functions.md
-      - How to use Git&GitHub: git-and-github/git-desktop.md
-  - Markdown: intro-to-md.md
+      - What is Git&GitHub: en/git-and-github/git-introduction.md
+      - Why we use Git&GitHub: en/git-and-github/git-functions.md
+      - How to use Git&GitHub: en/git-and-github/git-desktop.md
+  - Markdown: en/intro-to-md.md
   - Workflow:
-      - Practice: workflows/best-practice.md
-      - Projects: workflows/example-workflow.md
-  - References & Resources: resources.md
+      - Practice: en/workflows/best-practice.md
+      - Projects: en/workflows/example-workflow.md
+  - References & Resources: en/resources.md
 # mkdocs.yml
 remote_branch: gh-pages    # GitHub Pages 分支
 remote_name: origin       # 远程仓库名

@@ -2,7 +2,7 @@
 
 In the previous sections, we introduced Git and its workflows, such as cloning, branching, committing, and pushing changes. While these operations are powerful, they often require typing commands in a terminal, which can be intimidating for beginners.
 
-![Git-codes](../assets/git-codes.png)
+![Git-codes](../../assets/git-codes.png)
 ///caption
 intimidating Git codes
 ///

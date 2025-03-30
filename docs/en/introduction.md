@@ -2,7 +2,7 @@
 
 Before we start the detailed learning of docs-like-code workflow, let's take few minutes to understand it from a general perspective.
 
-![alt text](assets/docs-like-code-cover-smaller-1.png){ align=left }
+![alt text](../assets/docs-like-code-cover-smaller-1.png){ align=left }
 
 Most of the content in this guide is from the book ***Docs-Like-Code***. I just make a simple summary of this book combined with my own experiences with this workflow.
 
