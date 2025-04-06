@@ -35,11 +35,6 @@ Here are fundamental formatting patterns:
 ![Alt Text](image.jpg)
 
 `Inline Code` 
-
-\```python
-Code Block
-print("With syntax highlighting")
-\```
 ```
 
 ## Learn More
