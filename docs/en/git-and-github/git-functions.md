@@ -37,7 +37,7 @@ We use a robot metaphor to understand the relationships between three repositori
 
 - **Cloning**: After forking, you clone the repository to your local computer.
 
-- **Branch**: 
+- **Branch**: Create a new branch for your changes, following the project’s naming conventions and edit the local files in this branch to implement your updates.
 
 - **Commits**: Each time you save a change, Git creates a "commit" (a snapshot of your project at that moment).
 
@@ -45,9 +45,16 @@ We use a robot metaphor to understand the relationships between three repositori
 
 - **Pull Requests**: When your changes are ready, submit a Pull Request (PR) to the original repository.
 
-- **merge**: The original repository’s maintainers review your changes and decide whether to merge them.
+- **Merge**: The original repository’s maintainers review your changes and decide whether to merge them.
 
 - **Pull**: Before every time starting new modifications, always pull the latest version from the original repository to ensure your work is based on the newest updates.
+
+- **Update from Upstream**: Fetch and merge changes from the original repository into your local branch to keep it updated. Then, push these updates from your local repository to your forked repository to maintain compatibility with the latest project state.
+
+![git-workflow](../../assets/git-workflow.jpg)
+///caption
+Git Workflow Chart
+///
 
 ## 3. How Git Enables Version Control and Collaboration
 
