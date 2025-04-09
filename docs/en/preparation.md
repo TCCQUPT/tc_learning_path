@@ -13,7 +13,7 @@ GitHub DeskTop Download Page
 
 ## A GitHub Account
 
-Visit [GitHub website](https://github.com/) to create an account, then sign in to GitHub Desktop following the on-screen guidance. If no prompt appears, go to `File -> Options -> Accounts -> Sign` in to log in.
+Visit [**GitHub website**](https://github.com/) to create an account, then sign in to GitHub Desktop following the on-screen guidance. If no prompt appears, go to `File -> Options -> Accounts -> Sign` in to log in.
 
 ![github-desktop-download](../assets/github-official-website.png){width="800"}
 ///caption
