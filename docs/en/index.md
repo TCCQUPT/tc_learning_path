@@ -12,7 +12,7 @@ I have always wanted to create this guide on docs-like-code for three main reaso
 
 ## Who Is This Guide For?
 
-This guide is intended for those who are **students on the path of learning technical writing or TCer but new to either docs-like-code approach**.
+This guide is intended for those who are **students on the path of learning technical writing but totally new to either docs-like-code approach or git and GitHub**.
 
 For the former, I hope this guide sparks your interest in the docs-like-code methodology, fostering further communication and mutual learning. For the latter, I hope this guide can bring you new ideas on your own workflow.
 

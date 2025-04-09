@@ -2,15 +2,6 @@
 
 We need to sign up a GitHub account first and download two tools: GitHub Desktop and Visual Studio Code.
 
-## A GitHub Account
-
-Head to [GitHub website](https://github.com/) and sign up an account.
-
-![github-desktop-download](../assets/github-official-website.png){width="800"}
-///caption
-GitHub Official Website
-///
-
 ## Download GitHub Desktop
 
 GitHub Desktop is an GitHub Desktop is a GUI application provided by GitHub that simplifies common Git operations, allowing users to manage Git repositories without using the command line. It is especially suitable for those who are not familiar with command-line tools. [**Clike to view download page**](https://desktop.github.com/download/)
@@ -18,6 +9,15 @@ GitHub Desktop is an GitHub Desktop is a GUI application provided by GitHub that
 ![github-desktop-download](../assets/github-desktop-download.png){width="800"}
 ///caption
 GitHub DeskTop Download Page
+///
+
+## A GitHub Account
+
+Visit [GitHub website](https://github.com/) to create an account, then sign in to GitHub Desktop following the on-screen guidance. If no prompt appears, go to `File -> Options -> Accounts -> Sign` in to log in.
+
+![github-desktop-download](../assets/github-official-website.png){width="800"}
+///caption
+GitHub Official Website
 ///
 
 ## Download Visual Studio Code
