@@ -1,5 +1,7 @@
 # Git & GitHub: The Foundation of Docs Like Code
 
+In this part, we will quickly have an brief introduction of Git and GitHub.
+
 ## What is Git?
 
 Git is a distributed version control system designed to track changes in files. It serves two primary purposes:

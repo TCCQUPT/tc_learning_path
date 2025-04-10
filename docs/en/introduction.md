@@ -16,7 +16,7 @@ Then, what does the way that code goes?
 
 Mostly, programmer write and manage code in the following process and tools:
 
-1. Edit code in [an IDE(Integrated Development Environment)](preparation.md#download-visual-studio-code) like Visual Studio Code.
+1. Edit code in an IDE(Integrated Development Environment) like Visual Studio Code.
 2. Store and review code with code hosting platform like GitHub
 3. Collaborate and manage different versions with Git Branches.
 4. Tracking issues in Github
@@ -39,21 +39,16 @@ This guide is designed to help you master the **Docs Like Code** workflow throug
     - Collaboration workflows: Pull Requests, branching, and team collaboration
     - GitHub Desktop: A graphical user interface for easier Git management
 
-2. [**Markdown Essentials**](markdown/intro.md#introduction-to-markdown)
+2. [**Markdown Essentials**](intro-to-md.md#getting-started-with-markdown)
     - Introduction: Markdown syntax for lightweight documentation.
     - Advanced formatting: Tables, code blocks, diagrams ...
 
-3. [**Docs Like Code Workflow**](workflows/doc-like-code.md#what-is-doc-like-code)
+3. [**Docs Like Code Workflow**](workflows/best-practice.md#a-hello-world-in-your-path-to-technical-writing)
     - End-to-end workflow: From writing to publishing.
     - Real-world examples: Explore open-source projects that use Docs Like Code.
     - Hands-on practice: Create your first Pull Request and experience the "Hello World" of Docs Like Code.
 
-4. **MkDocs: Building Documentation Sites**
-    - Set up: Generate static websites from Markdown.
-    - Customization: Themes and plugin integration.
-    - Deployment: Automate documentation publishing to GitHub Pages.
-
-5. **Tools & Resources**
+4. [**References & Resources**](resources.md#additional-resources)
     - Curated tools: Open-source options like Sphinx, Docusaurus.
     - Learning resources: Technical writing courses and community guidelines.
     - Quick references: Templates and cheat sheets for efficient use.
