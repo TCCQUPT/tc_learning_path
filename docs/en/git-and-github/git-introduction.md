@@ -44,17 +44,14 @@ Open source means making the source code of a project publicly available, allowi
 
 Here are some well-known open-source projects you might have heard of:
 
-=== "Linux"
-    The most popular open-source operating system.
+=== "Anki"
+    ![anki](../../assets/anki-project.png)
+=== "DeepSeek"
+    ![deepseek](../../assets/deepseek-project.png)
 === "VS Code"
-    A powerful code editor developed by Microsoft.
-    ![alt text](../assets/download-vscode.png)
-=== "TensorFlow"
-    Google's open-source machine learning framework.
-=== "React"
-    A JavaScript library for building user interfaces, maintained by Facebook.
-=== "demo"
-    ![alt text](../assets/favicon.ico){ width=300 }
+    ![vscode](../../assets/vscode.png)
+=== "LanguageTool"
+    ![language-tool-project](../../assets/language-tool-project.png)
 
 ## How Git and GitHub Relate to Docs Like Code
 

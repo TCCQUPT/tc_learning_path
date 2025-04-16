@@ -14,7 +14,7 @@ Docs-like-code Workflow Chart
 When creating a branch and followed any edition, you should strictly follow the project’s contribution guidelines. This includes not only technical details, such as naming conventions for branches, but also writing clear and meaningful commit messages, which are helpful for the project maintainers and other contributors. Here are some key points:
 
 - **Branch Naming Rules:** Many projects have specific naming conventions to help identify the purpose of a branch. For example, using the feature/ prefix for new features or bugfix/ for bug fixes.
-- **Editing Operations Must Follow Standards:** All editing operations, including adding, deleting, or modifying files, should be done according to best practices outlined in the contribution guidelines to ensure alignment with the project’s overall style and structure.
+- **Guidline-orinted Editting** All editing operations, including adding, deleting, or modifying files, should be done according to best practices outlined in the contribution guidelines to ensure alignment with the project’s overall style and structure.
 - **The Importance of Commit Messages:** Each commit message should clearly describe the changes made and the reason behind them. This helps other developers quickly understand your intent and simplifies the code review process.
 
 ### About Pull Request
