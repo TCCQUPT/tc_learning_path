@@ -13,3 +13,5 @@ For the FOSScope TranslateProject found on GitHub, this initiative focuses on th
 ![fosscope](../../assets/fosscope.png)
 
 ## Docs-like-code Chinese localization
+
+To translate this English website to Chinese.
