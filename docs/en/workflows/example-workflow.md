@@ -14,4 +14,4 @@ For the FOSScope TranslateProject found on GitHub, this initiative focuses on th
 
 ## Docs-like-code Chinese localization
 
-To translate this English website to Chinese.
+To translate this English website to Chinese. haha

@@ -65,4 +65,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "./gh-pages-content/*"
           target: "/www/wwwroot/docs-like-code"
-          rm: true
+          rm: false
