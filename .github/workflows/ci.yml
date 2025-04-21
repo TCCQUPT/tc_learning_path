@@ -34,3 +34,35 @@ jobs:
           pip install mkdocs-static-i18n
       - name: Deploy
         run: mkdocs gh-deploy --force
+        
+      # Wait for gh-pages branch to update
+      - name: Wait for gh-pages to update
+        run: sleep 30
+      
+      # Checkout gh-pages branch
+      - name: Checkout gh-pages Branch
+        uses: actions/checkout@v4
+        with:
+          ref: 'gh-pages'
+          path: 'gh-pages-content'
+      
+      # Create target directory on server
+      - name: Create target directory
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            mkdir -p /www/wwwroot/docs-like-code
+      
+      # Upload files to server
+      - name: Copy files to server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "./gh-pages-content/*"
+          target: "/www/wwwroot/docs-like-code"
+          rm: true

@@ -29,9 +29,24 @@ Submitting a Pull Request (PR) is a critical step in contributing code to a proj
 
 Now you can take your first step on your path to Technical Writing. It's just like a "Hello World" in Docs-like-code. We will take a demo project to experience a simple but whole-process docs-like-code workflow.
 
-Now we'll practice this workflow. If you didn't watch the livestream, then you can follow this article to try.
+Now we'll practice this workflow. If you didn't watch the livestream, then you can follow this part to try.
 
-[**How to contribut to a github repository**](https://blog.rayray.vip/2023/12/27/03-how-to-create-pull-request/){: .card-link }
+1. **Read the Contribution Guidance**
 
-!!! note "Note"
-    You only need to change the targe repository from `pingcap/docs` to `tccqupt/hello-tc`.
+2. **Forking the original repository**
+
+3. **Cloning the forked repository to local computer**
+
+4. **Create a Branch to edit**
+
+5. **Update from Upstream**
+
+6. **Pull changes in your forked repository to local environment**
+
+7. **Commits your changes**
+
+8. **Pushing your changes to forked repository**
+
+9. **Create Pull Request to propose your changes to the original repository**
+
+10. **Wait for maintainers to review and provide feedback on your submission**
