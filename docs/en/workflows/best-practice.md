@@ -50,7 +50,7 @@ Now we'll practice this workflow. If you didn't watch the livestream, then you c
 6. **Start contribution**
     ![guidelines](../../assets/10-edit.png)
 
-7. **Pull origin**
+7. **Pull changes from forked repository to local env**
 
 8. **Commits your changes**
     ![guidelines](../../assets/11-commit.png)

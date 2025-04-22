@@ -47,7 +47,7 @@ The git workflow where we can see convenient collaboration and powerful version 
 
 6. **Commits**: Each time you save a change, Git creates a "commit" (a snapshot of your project at that moment).
 
-7. **Pushing**: Once you've made changes, push them to your forked repository.
+7. **Pushing Origin**: Once you've made changes, push them to your forked repository.
 
 8. **Pull Requests**: When your changes are ready, submit a Pull Request (PR) to the original repository.
 
