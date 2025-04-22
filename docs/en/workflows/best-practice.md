@@ -32,21 +32,32 @@ Now you can take your first step on your path to Technical Writing. It's just li
 Now we'll practice this workflow. If you didn't watch the livestream, then you can follow this part to try.
 
 1. **Read the Contribution Guidance**
-
+    ![guidelines](../../assets/7-guidance.png)
 2. **Forking the original repository**
-
+    ![guidelines](../../assets/1-fork.png)
+    ![guidelines](../../assets/2-fork.png)
+    ![guidelines](../../assets/3-fork.png)  
 3. **Cloning the forked repository to local computer**
-
-4. **Create a Branch to edit**
-
+    ![guidelines](../../assets/4-clone.png)
+    ![guidelines](../../assets/5-clone.png)
+    ![guidelines](../../assets/6-clone.png)
+4. **Create a Branch**
+    ![guidelines](../../assets/8-branch.png)
+    ![guidelines](../../assets/9-branch.png)
+    ![guidelines](../../assets/10-branch.png)
 5. **Update from Upstream**
 
-6. **Pull changes in your forked repository to local environment**
+6. **Start contribution**
+    ![guidelines](../../assets/10-edit.png)
 
-7. **Commits your changes**
+7. **Pull origin**
 
-8. **Pushing your changes to forked repository**
-
-9. **Create Pull Request to propose your changes to the original repository**
-
-10. **Wait for maintainers to review and provide feedback on your submission**
+8. **Commits your changes**
+    ![guidelines](../../assets/11-commit.png)
+9. **Pushing your changes to forked repository**
+    ![guidelines](../../assets/12-publish.png)
+10. **Create Pull Request to propose your changes to the original repository**
+    ![guidelines](../../assets/13-pr.png)
+    ![guidelines](../../assets/14-pr.png)
+11. **Wait for maintainers to review and provide feedback on your submission**
+    ![guidelines](../../assets/15-pr.png)

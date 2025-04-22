@@ -43,7 +43,7 @@ The git workflow where we can see convenient collaboration and powerful version 
 
 4. **Update from Upstream**: Fetch and merge changes from the original repository into your local branch to keep it updated. Then, push these updates from your local repository to your forked repository to maintain compatibility with the latest project state.
 
-5. **Pull(seldom use)**: Before starting any new modifications, always pull the latest version from your forked repository to your local environment. This practice is particularly important when you've pushed changes to your forked repository from different devices, ensuring all your work remains synchronized and preventing potential merge conflicts.
+5. **Pull Origin(seldom use)**: Before starting any new modifications, always pull the latest version from your forked repository to your local environment. This practice is particularly important when you've pushed changes to your forked repository from different devices, ensuring all your work remains synchronized and preventing potential merge conflicts.
 
 6. **Commits**: Each time you save a change, Git creates a "commit" (a snapshot of your project at that moment).
 
