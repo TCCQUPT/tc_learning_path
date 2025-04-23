@@ -46,12 +46,10 @@ Now we'll practice this workflow. If you didn't watch the livestream, then you c
     ![guidelines](../../assets/9-branch.png)
     ![guidelines](../../assets/10-branch.png)
 5. **Update from Upstream**
-
+    ![guidelines](../../assets/16-update.png)
 6. **Start contribution**
     ![guidelines](../../assets/10-edit.png)
-
-7. **Pull changes from forked repository to local env**
-
+7. **Pull changes from forked repository to local env(seldom use)**
 8. **Commits your changes**
     ![guidelines](../../assets/11-commit.png)
 9. **Pushing your changes to forked repository**
