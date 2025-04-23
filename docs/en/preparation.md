@@ -30,3 +30,6 @@ Head to [*the official website of VSCode*](https://code.visualstudio.com/) and C
 ///caption
 Visual Studio Code Download Page
 ///
+
+!!! note "Note"
+    Please note that you may need to set up a VPN to ensure smooth access to certain websites.
