@@ -21,14 +21,6 @@ GitHub Desktop is designed to make Git more accessible, especially for those new
 
     See your repository's history, branches, and changes in a clear, graphical format. Easily track what you've done and what needs to be done next.
 
-3. Simplify Collaboration
-
-    Quickly create Pull Requests and merge branches with just a few clicks. Resolve merge conflicts using a guided interface.
-
-4. Seamless Integration with GitHub
-
-    Connect to your GitHub account and manage repositories directly from the app. Sync your local and remote repositories effortlessly.
-
 ## Next Steps
 
 Now that you understand how GitHub Desktop simplifies the Git workflow, let's dive into Markdown Essentials to learn how to write and format documentation effectively. In the Docs Like Code Workflow section, we'll explore how to use GitHub Desktop in a real-world documentation project.

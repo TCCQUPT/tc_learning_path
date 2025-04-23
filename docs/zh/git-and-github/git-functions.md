@@ -2,25 +2,27 @@
 
 We've already talked about that Git and GitHub are the foundation of Docs-like-code workflow. To understand why they are so powerful, let's break down how they work and how they enable version control and collaboration. In the first, we need to know the concept of the repository in Git.
 
-## 1. The Three Layers of Git: Remote, Forked, and Local repositories
+## The Three Layers of Git
 
-Git operates across three main layers:
+To contribute to a well-known project or an application's documentation, we submit our suggestions or modifications through Git's three layers.
 
-1. **The Original Repository (Remote)**
+> Just think of a repository as a project.
+
+1. **The Original Repository (on other's github account)**
 
     This is the main project hosted on GitHub (e.g., a popular open-source project like VS Code).
 
     - You can view the code and documentation, but you **can't directly edit it**.
     - To contribute, you need to create your own copy.
 
-2. **Your Forked Repository (Remote)**
+2. **Your Forked Repository (on your github account)**
 
     Forking creates a **personal copy** of the original repository under your GitHub account.
 
     - This is where you can freely make changes without affecting the original project.
     - Think of it as your own "sandbox" to experiment and contribute.
 
-3. **Your Local Repository**
+3. **Your Local Repository(on your local computer)**
 
     This is the copy of the repository on your computer.
 
@@ -31,31 +33,34 @@ Then how the three layers enable git achieve version control and collaboration. 
 
 ## 2. The workflow of Git
 
-We use a robot metaphor to understand the relationships between three repositories and the entire Git workflow.
+The git workflow where we can see convenient collaboration and powerful version control is mainly made by the following steps:
 
-- **Forking**: When you fork a repository, you create your own copy to work on.
-  - Creating a branch store by the flagship store is the process of forking, making a copy of your own.
+1. **Forking**: When you fork a repository, you create your own copy to work on.
 
-- **Cloning**: After forking, you clone the repository to your local computer.
-  - To modify the robot model, you need hands-on debugging. You copy a robot to your home for adjustments. To avoid damaging the original robot sample, you create a duplicate robot to modify — this is creating a branch.
+2. **Cloning**: After forking, you clone the repository to your local computer.
 
-- **Commits**: Each time you save a change, Git creates a "commit" (a snapshot of your project at that moment).
-  - Every time you make a modification (e.g., adjusting the robot’s arm), you take a "snapshot" of your changes. This snapshot is a commit.
+3. **Branch**: Create a new branch for your changes, following the project’s naming conventions and edit the local files in this branch to implement your updates.
 
-- **Pushing**: Once you've made changes, push them to your forked repository.
-  - After finalizing your robot’s arm design, you ship the modified robot back to your branch store. This is pushing your changes.
+4. **Update from Upstream**: Fetch and merge changes from the original repository into your local branch to keep it updated. Then, push these updates from your local repository to your forked repository to maintain compatibility with the latest project state.
 
-- **Pull Requests**: When your changes are ready, submit a Pull Request (PR) to the original repository.
-  - Example: The maintainers of the original project will review your changes and decide whether to merge them.
-  - You submit a design proposal to the flagship store, asking them to incorporate your arm design into their official model. This is a pull request.
+5. **Pull Origin(seldom use)**: Before starting any new modifications, always pull the latest version from your forked repository to your local environment. This practice is particularly important when you've pushed changes to your forked repository from different devices, ensuring all your work remains synchronized and preventing potential merge conflicts.
 
-- **merge**: The original repository’s maintainers review your changes and decide whether to merge them.
-  - While you were modifying your local copy, others might have changed the same part of the robot, causing conflicts. The final decision on how to merge the changes lies with the flagship store’s managers.
+6. **Commits**: Each time you save a change, Git creates a "commit" (a snapshot of your project at that moment).
 
-- **Pull**: Before every time starting new modifications, always pull the latest version from the original repository to ensure your work is based on the newest updates.
-  - You might not finish modifying the robot in one go (e.g., working two hours today and two tomorrow). While you’re paused, others might modify and merge their changes into the flagship store’s model. Before editing again, always pull the latest model from the flagship store to avoid conflicts. You can choose whether to overwrite your changes with the latest version or keep your modifications.
+7. **Pushing Origin**: Once you've made changes, push them to your forked repository.
+
+8. **Pull Requests**: When your changes are ready, submit a Pull Request (PR) to the original repository.
+
+9. **Merge**: The original repository’s maintainers review your changes and decide whether to merge them.
+
+![git-workflow](../../assets/git-workflow.jpg)
+///caption
+Git Workflow Chart
+///
 
 ## 3. How Git Enables Version Control and Collaboration
+
+Git serves as a crucial tool for version control and collaboration in digital projects. It systematically tracks all changes to project files, allowing developers to manage different versions effectively. Moreover, it enables multiple teams to work concurrently. This two - fold functionality ensures that new features can be safely developed and tested in separate environments before being integrated into the main project.
 
 ### Version Control
 
