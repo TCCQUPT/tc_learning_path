@@ -4,7 +4,7 @@ We need to sign up **a GitHub account** first and download two tools: **GitHub D
 
 ## Download GitHub Desktop
 
-GitHub Desktop is an GitHub Desktop is a GUI application provided by GitHub that simplifies common Git operations, allowing users to manage Git repositories without using the command line. It is especially suitable for those who are not familiar with command-line tools([*Clike to view download page*](https://desktop.github.com/download/)).
+GitHub Desktop is a GUI(Graphic User Interface) application provided by GitHub that simplifies common Git operations, allowing users to manage Git repositories without using the command line. It is especially suitable for those who are not familiar with command-line tools([*Clike to view download page*](https://desktop.github.com/download/)).
 
 ![github-desktop-download](../assets/github-desktop-download.png){width="800"}
 ///caption
