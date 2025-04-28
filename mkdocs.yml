@@ -89,8 +89,8 @@ extra_css:
 extra:
   alternate:
     - name: English
-      link: /tc_learning_path/
+      link: /
       lang: en
     - name: 中文
-      link: /tc_learning_path/zh/
+      link: /zh/
       lang: zh
