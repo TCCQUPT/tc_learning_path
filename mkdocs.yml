@@ -47,7 +47,7 @@ plugins:
       prebuild_index: true  # 预构建索引
 # copyright: Copyright &copy; Technical Communication Society in CQUPT # 左下角的版权声明
 nav:
-  - Welcome: index.md
+  - Welcome: en/index.md
   - Introduction: en/introduction.md
   - Preparation: en/preparation.md
   - Git-and-github : 
@@ -86,3 +86,11 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
+extra:
+  alternate:
+    - name: English
+      link: /tc_learning_path/
+      lang: en
+    - name: 中文
+      link: /tc_learning_path/zh/
+      lang: zh
