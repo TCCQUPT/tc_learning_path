@@ -1,0 +1,36 @@
+name: Assign Issue on Comment
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  issues: write
+  contents: read
+  pull-requests: write
+
+jobs:
+  assign-issue:
+    runs-on: ubuntu-latest
+    if: contains(github.event.comment.body, '@assign')
+    steps:
+      - name: Install GitHub CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gh
+
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Assign issue and move to project column
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ASSIGNEE: ${{ github.event.comment.user.login }}
+        run: |
+          # Assign the issue to the user who commented
+          gh issue edit "$ISSUE_NUMBER" --add-assignee "$ASSIGNEE"
+
+          # Move the issue to the "In Progress" column if a project is linked
+          gh project item move --issue "$ISSUE_NUMBER" --column "In Progress" || echo "No linked project to move the issue to."
+        shell: bash
