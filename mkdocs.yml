@@ -47,7 +47,7 @@ plugins:
       prebuild_index: true  # 预构建索引
 # copyright: Copyright &copy; Technical Communication Society in CQUPT # 左下角的版权声明
 nav:
-  - Welcome: en/index.md
+  - Welcome: index.md
   - Introduction: en/introduction.md
   - Preparation: en/preparation.md
   - Git-and-github : 

@@ -1,19 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://tccqupt.github.io/tc_learning_path/</loc>
-         <lastmod>2024-11-23</lastmod>
+        <loc>https://tccqupt.github.io/tc_learning_path/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/"/>
     </url>
     <url>
-         <loc>https://tccqupt.github.io/tc_learning_path/path-to-a-tcer/introduction/</loc>
-         <lastmod>2024-11-23</lastmod>
+        <loc>https://tccqupt.github.io/tc_learning_path/intro-to-md/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/intro-to-md/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/intro-to-md/"/>
     </url>
     <url>
-         <loc>https://tccqupt.github.io/tc_learning_path/path-to-a-tcer/skills/</loc>
-         <lastmod>2024-11-23</lastmod>
+        <loc>https://tccqupt.github.io/tc_learning_path/introduction/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/introduction/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/introduction/"/>
     </url>
     <url>
-         <loc>https://tccqupt.github.io/tc_learning_path/path-to-a-tcer/tools/</loc>
-         <lastmod>2024-11-23</lastmod>
+        <loc>https://tccqupt.github.io/tc_learning_path/preparation/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/preparation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/preparation/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/resources/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/resources/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/resources/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/git-and-github/git-desktop/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/git-and-github/git-desktop/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/git-and-github/git-desktop/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/git-and-github/git-functions/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/git-and-github/git-functions/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/git-and-github/git-functions/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/git-and-github/git-introduction/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/git-and-github/git-introduction/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/git-and-github/git-introduction/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/workflows/best-practice/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/workflows/best-practice/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/workflows/best-practice/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/workflows/example-workflow/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/workflows/example-workflow/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/workflows/example-workflow/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/zh/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/zh/intro-to-md/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/intro-to-md/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/intro-to-md/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/zh/introduction/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/introduction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/introduction/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/zh/preparation/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/preparation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/preparation/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/zh/resources/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/resources/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/resources/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/zh/git-and-github/git-desktop/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/git-and-github/git-desktop/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/git-and-github/git-desktop/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/zh/git-and-github/git-functions/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/git-and-github/git-functions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/git-and-github/git-functions/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/zh/git-and-github/git-introduction/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/git-and-github/git-introduction/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/git-and-github/git-introduction/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/zh/workflows/best-practice/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/workflows/best-practice/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/workflows/best-practice/"/>
+    </url>
+    <url>
+        <loc>https://tccqupt.github.io/tc_learning_path/zh/workflows/example-workflow/</loc>
+        <lastmod>2025-04-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://tccqupt.github.io/tc_learning_path/zh/workflows/example-workflow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://tccqupt.github.io/tc_learning_path/workflows/example-workflow/"/>
     </url>
 </urlset>
