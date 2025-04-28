@@ -11,20 +11,21 @@ jobs:
     steps:
       - name: Install GitHub CLI
         run: |
-          curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
-          echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-          sudo apt update
-          sudo apt install gh
+          sudo apt-get update
+          sudo apt-get install -y gh
+
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Assign issue
+
+      - name: Assign issue and move to project column
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           ASSIGNEE: ${{ github.event.comment.user.login }}
         run: |
-          gh issue edit $ISSUE_NUMBER --add-assignee $ASSIGNEE
-          gh project item move --issue $ISSUE_NUMBER --column "In Progress"
+          # Assign the issue to the user who commented
+          gh issue edit "$ISSUE_NUMBER" --add-assignee "$ASSIGNEE"
+
+          # Move the issue to the "In Progress" column if a project is linked
+          gh project item move --issue "$ISSUE_NUMBER" --column "In Progress" || echo "No linked project to move the issue to."
         shell: bash
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
