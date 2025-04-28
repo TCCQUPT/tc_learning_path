@@ -1,4 +1,4 @@
-# Welcome to Path to a TCer
+# Welcome to Docs_like_code workflow learning
 
 Thanks for your interest in the docs-like-code approach. This guide is designed to introduce you to this workflow within the realm of technical writing. It aims to help writers manage documentation as they would code, collaborate efficiently, and produce professional, accessible documents using tools such as Git, GitHub, Markdown, and open-source frames like MkDocs.
 
