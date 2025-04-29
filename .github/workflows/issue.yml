@@ -6,50 +6,41 @@ on:
 
 permissions:
   issues: write
+  contents: read
+  pull-requests: write
 
 jobs:
   assign-issue:
     runs-on: ubuntu-latest
-    if: |
-      contains(github.event.comment.body, '@assign') &&
-      github.event.issue.state == 'open'
-
+    if: contains(github.event.comment.body, '@assign')
     steps:
       - name: Install GitHub CLI
         run: |
           sudo apt-get update
           sudo apt-get install -y gh
 
-      - name: Set up Git Config
+      - name: Authenticate GitHub CLI
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions Bot"
+          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
 
-      - name: Try to assign issue to commenter
-        id: assign_issue
+      - name: Check collaborator status and assign issue
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           ASSIGNEE: ${{ github.event.comment.user.login }}
+          REPO: ${{ github.repository }}
         run: |
-          set +e  # disable immediate exit on error
-
-          # Try to assign
-          gh issue edit "$ISSUE_NUMBER" --add-assignee "$ASSIGNEE"
-
-          if [ $? -eq 0 ]; then
-            echo "::set-output name=success::true"
-            echo "✅ Successfully assigned to @$ASSIGNEE"
+          # Check if commenter is a collaborator
+          if gh api repos/$REPO/collaborators/$ASSIGNEE -q '.permission' &>/dev/null; then
+            # Assign the issue to the user who commented
+            gh issue edit "$ISSUE_NUMBER" --repo "$REPO" --add-assignee "$ASSIGNEE"
+            
+            # Try to move the issue to "In Progress" if project is linked
+            gh issue edit "$ISSUE_NUMBER" --repo "$REPO" --add-label "in-progress" || echo "Could not add label"
+            echo "Issue assigned to $ASSIGNEE successfully"
           else
-            echo "::set-output name=success::false"
-            echo "❌ Failed to assign to @$ASSIGNEE"
+            # Comment that user cannot be assigned
+            gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "⚠️ Hi @$ASSIGNEE, you cannot be assigned to this issue because you are not a collaborator on this repository. Please contact an administrator to request access."
+            echo "User $ASSIGNEE is not a collaborator, cannot assign issue"
           fi
-
-      - name: Reply with warning message if failed
-        if: steps.assign_issue.outputs.success == 'false'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}     # ✅ 必须添加
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
-          ASSIGNEE: ${{ github.event.comment.user.login }}
-        run: |
-          gh issue comment "$ISSUE_NUMBER" --body="⚠️ Hi @$ASSIGNEE, you cannot be assigned to this issue because you are not a collaborator on this repository. Please contact an administrator to request access."
+        shell: bash
