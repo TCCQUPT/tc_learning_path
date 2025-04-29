@@ -7,40 +7,27 @@ on:
 permissions:
   issues: write
   contents: read
-  pull-requests: write
 
 jobs:
   assign-issue:
     runs-on: ubuntu-latest
     if: contains(github.event.comment.body, '@assign')
     steps:
-      - name: Install GitHub CLI
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y gh
-
       - name: Authenticate GitHub CLI
         run: |
           echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
 
-      - name: Check collaborator status and assign issue
+      - name: Assign issue to commenter
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           ASSIGNEE: ${{ github.event.comment.user.login }}
           REPO: ${{ github.repository }}
         run: |
-          # Check if commenter is a collaborator
-          if gh api repos/$REPO/collaborators/$ASSIGNEE -q '.permission' &>/dev/null; then
-            # Assign the issue to the user who commented
-            gh issue edit "$ISSUE_NUMBER" --repo "$REPO" --add-assignee "$ASSIGNEE"
-            
-            # Try to move the issue to "In Progress" if project is linked
-            gh issue edit "$ISSUE_NUMBER" --repo "$REPO" --add-label "in-progress" || echo "Could not add label"
-            echo "Issue assigned to $ASSIGNEE successfully"
+          # Directly try to assign the issue and capture the result
+          if gh issue edit "$ISSUE_NUMBER" --repo "$REPO" --add-assignee "$ASSIGNEE"; then
+            echo "Issue #$ISSUE_NUMBER successfully assigned to $ASSIGNEE"
           else
-            # Comment that user cannot be assigned
-            gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "⚠️ Hi @$ASSIGNEE, you cannot be assigned to this issue because you are not a collaborator on this repository. Please contact an administrator to request access."
-            echo "User $ASSIGNEE is not a collaborator, cannot assign issue"
+            gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "⚠️ There was a problem assigning @$ASSIGNEE to this issue. Please check if you have sufficient permissions."
+            exit 1
           fi
-        shell: bash
