@@ -6,31 +6,54 @@ on:
 
 permissions:
   issues: write
-  contents: read
-  pull-requests: write
 
 jobs:
   assign-issue:
     runs-on: ubuntu-latest
-    if: contains(github.event.comment.body, '@assign')
+    if: |
+      contains(github.event.comment.body, '@assign') &&
+      github.event.issue.state == 'open'
+
     steps:
       - name: Install GitHub CLI
         run: |
           sudo apt-get update
           sudo apt-get install -y gh
 
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Set up Git Config
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions Bot"
 
-      - name: Assign issue and move to project column
+      - name: Check if user can be assigned
+        id: check_assignee
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ASSIGNEE: ${{ github.event.comment.user.login }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          # Check if the user is a valid assignee for this repo
+          response=$(gh api -X GET /repos/${{ github.repository }}/assignees/$ASSIGNEE --silent)
+
+          if [[ $? -ne 0 ]]; then
+            echo "::error::User @$ASSIGNEE is not a valid assignee for this repository."
+            echo "::set-output name=can_assign::false"
+          else
+            echo "::set-output name=can_assign::true"
+          fi
+
+      - name: Assign issue to commenter
+        if: steps.check_assignee.outputs.can_assign == 'true'
+        run: |
+          gh issue edit "$ISSUE_NUMBER" --add-assignee "$ASSIGNEE"
+        env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           ASSIGNEE: ${{ github.event.comment.user.login }}
-        run: |
-          # Assign the issue to the user who commented
-          gh issue edit "$ISSUE_NUMBER" --add-assignee "$ASSIGNEE"
 
-          # Move the issue to the "In Progress" column if a project is linked
-          gh project item move --issue "$ISSUE_NUMBER" --column "In Progress" || echo "No linked project to move the issue to."
-        shell: bash
+      - name: Reply with warning message
+        if: steps.check_assignee.outputs.can_assign == 'false'
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body="⚠️ Hi @$ASSIGNEE, you cannot be assigned to this issue because you are not a collaborator on this repository. Please contact an administrator to request access."
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ASSIGNEE: ${{ github.event.comment.user.login }}
