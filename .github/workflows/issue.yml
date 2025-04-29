@@ -47,8 +47,9 @@ jobs:
 
       - name: Reply with warning message if failed
         if: steps.assign_issue.outputs.success == 'false'
-        run: |
-          gh issue comment "$ISSUE_NUMBER" --body="⚠️ Hi @$ASSIGNEE, you cannot be assigned to this issue because you are not a collaborator on this repository. Please contact an administrator to request access."
         env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}     # ✅ 必须添加
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           ASSIGNEE: ${{ github.event.comment.user.login }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body="⚠️ Hi @$ASSIGNEE, you cannot be assigned to this issue because you are not a collaborator on this repository. Please contact an administrator to request access."
