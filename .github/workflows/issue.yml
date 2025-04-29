@@ -25,33 +25,28 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions Bot"
 
-      - name: Check if user can be assigned
-        id: check_assignee
+      - name: Try to assign issue to commenter
+        id: assign_issue
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ASSIGNEE: ${{ github.event.comment.user.login }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ASSIGNEE: ${{ github.event.comment.user.login }}
         run: |
-          # Check if the user is a valid assignee for this repo
-          response=$(gh api -X GET /repos/${{ github.repository }}/assignees/$ASSIGNEE --silent)
+          set +e  # disable immediate exit on error
 
-          if [[ $? -ne 0 ]]; then
-            echo "::error::User @$ASSIGNEE is not a valid assignee for this repository."
-            echo "::set-output name=can_assign::false"
+          # Try to assign
+          gh issue edit "$ISSUE_NUMBER" --add-assignee "$ASSIGNEE"
+
+          if [ $? -eq 0 ]; then
+            echo "::set-output name=success::true"
+            echo "✅ Successfully assigned to @$ASSIGNEE"
           else
-            echo "::set-output name=can_assign::true"
+            echo "::set-output name=success::false"
+            echo "❌ Failed to assign to @$ASSIGNEE"
           fi
 
-      - name: Assign issue to commenter
-        if: steps.check_assignee.outputs.can_assign == 'true'
-        run: |
-          gh issue edit "$ISSUE_NUMBER" --add-assignee "$ASSIGNEE"
-        env:
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
-          ASSIGNEE: ${{ github.event.comment.user.login }}
-
-      - name: Reply with warning message
-        if: steps.check_assignee.outputs.can_assign == 'false'
+      - name: Reply with warning message if failed
+        if: steps.assign_issue.outputs.success == 'false'
         run: |
           gh issue comment "$ISSUE_NUMBER" --body="⚠️ Hi @$ASSIGNEE, you cannot be assigned to this issue because you are not a collaborator on this repository. Please contact an administrator to request access."
         env:
