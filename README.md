@@ -3,7 +3,7 @@
 ## 贡献
 您能做些什么：
 1. 检查网站中是否有任何错误
-2. 将英文网站翻译为中文，详情请查看[翻译贡献指南](./Contribution Guide.md)
+2. 将英文网站翻译为中文，详情请查看[翻译贡献指南](https://github.com/TCCQUPT/tc_learning_path/blob/main/Contribution-Guide.md)
 
 
 请查看贡献指南。
