@@ -1,44 +1,45 @@
-# Getting Started with Markdown
+#  Markdown 入门
 
-## What is Markdown?
+## 什么是 Markdown?
 
-Markdown is a lightweight markup language that lets you format plain text using simple syntax. Files using Markdown have the `.md` extension and can be easily converted to HTML or other formats. Its human-readable format makes it perfect for documentation that needs to be both machine-processable and author-friendly.
+Markdown 是一种轻量级标记语言，可通过简洁的语法对纯文本进行格式化。Markdown 文件使用 `.md`扩展名，并能轻松转换为 HTML 或其他格式。其格式直观易读，特别适合需要兼顾机器处理与人工编写的文档场景。
 
-## Why Markdown for Docs-as-Code?
+## 为何用Markdown实现文档即代码？
 
-When practicing **docs-as-code**, Markdown shines because:
+在实现文档即代码（**docs-as-code**）时，Markdown的优势尤为突出：
 
-- **Collaboration Ready**: Easy to read/write for both technical and non-technical contributors
-- **Toolchain Integration**: Supported by all major platforms (GitHub, GitLab, etc.) and static site generators
-- **Low Barrier**: Quick to learn compared to complex formatting tools
 
-## Essential Markdown Syntax
+- **协作友好性**: 同时满足技术人员与非技术人员的读写需求。
+- **开箱即用的工具链支持**: 全面兼容主流平台（GitHub、GitLab等）及静态站点生成器。
+- **低门槛**: 相比复杂排版工具，Markdown更易上手。
+##  Markdown核心语法精要
 
-Here are fundamental formatting patterns:
+以下是基础格式规范示例：
 
 ```markdown
-# Header 1
-## Header 2
-### Header 3
+# 一级标题
+## 二级标题
+### 三级标题
 
-**Bold Text** or __Bold__
-*Italic Text* or _Italic_
+**加粗文本** or __加粗__
+*斜体文本* or _斜体_
 
-- Unordered List
-- With hyphens
+- 无序标题
+- 使用连字符
 
-1. Ordered List
-2. With numbers
+1.  有序标题
+2.  使用数字
 
-[Link Text](https://example.com)
+[链接文本](https://example.com)
 
-![Alt Text](image.jpg)
+![替换文本](image.jpg)
 
-`Inline Code` 
+`内联代码` 
 ```
 
-## Learn More
+## 了解更多
 
-Master Markdown through these resources:  
-🔗 **[The Markdown Guide](https://www.markdownguide.org)** - Interactive tutorials and cheat sheet  
-🔗 **[CommonMark Spec](https://commonmark.org)** - Official syntax standardization
+通过以下这些资源帮助你更好掌握 Markdown：:  
+🔗 **[The Markdown 指南](https://www.markdownguide.org)** - 交互式教程与速查表  
+🔗 **[CommonMark 规范](https://commonmark.org)** - 官方语法标准化文档
+
