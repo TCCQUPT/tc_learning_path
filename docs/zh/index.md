@@ -1,20 +1,19 @@
-# Welcome to Docs_like_code workflow learning
+#  欢迎来到 Docs_like_code 工作流程学习
 
-Thanks for your interest in the docs-like-code approach. This guide is designed to introduce you to this workflow within the realm of technical writing. It aims to help writers manage documentation as they would code, collaborate efficiently, and produce professional, accessible documents using tools such as Git, GitHub, Markdown, and open-source frames like MkDocs.
+感谢你对 docs-like-code 的关注。本指南旨在向你介绍这一技术写作工作流程，帮助写作者像管理代码一样管理文档，实现高效协作，提升协作效率，并借助 Git、GitHub、Markdown 以及 MkDocs 等工具，轻松打造专业且易用的文档内容。
+## 为什么要写这本指南?
 
-## Why Write This Guide?
+我一直想写这本关于 docs-like-code 的指南，主要有三个原因：
 
-I have always wanted to create this guide on docs-like-code for three main reasons:
+1. 寻找志同道合的伙伴，一起合作开展项目。
+2. 发掘英语学习者的更多职业可能性。
+3. 为开源社区贡献自己的一份力量。
 
-1. To connect with like-minded individuals who want to develop projects together.
-2. To explore additional career opportunities for English learners.
-3. To contribute to the Open Source Community.
+## 这本指南适合哪些人?
 
-## Who Is This Guide For?
+ 这本指南主要面向那些 **正在学习技术写作，但对 docs-like-code 工作流程以及 Git 和 GitHub** 还不熟悉的朋友。
 
-This guide is intended for those who are **students on the path of learning technical writing but totally new to either docs-like-code approach or git and GitHub**.
+如果你是技术写作的新手，希望这本指南能帮你打开对 docs-like-code 方法的认识之门，激发学习热情，促进交流合作；如果你已经接触过相关工具，也希望这里能为你的工作方式带来一些新的灵感。
 
-For the former, I hope this guide sparks your interest in the docs-like-code methodology, fostering further communication and mutual learning. For the latter, I hope this guide can bring you new ideas on your own workflow.
-
-!!! note "Note"
-    This guide is finished by Ray, who are a normal student interested in Technical Writing. Designed for complete beginners to Git and aspiring open-source contributors, this introductory resource intentionally maintains a streamlined scope - it's not meant to be as comprehensive as traditional developer guides.  All the contents are based on my own experiences and perspectives, so if any mistakes are found, welcome to any feedback or contributions through [the project's GitHub repository](https://github.com/TCCQUPT/tc_learning_path).
+!!! 注意
+     这本指南由我，Ray，一名热衷于技术写作的普通学生，倾心编写。指南专为0 Git 基础、但希望参与开源项目的新手准备，内容简洁易懂，不追求像传统开发者手册那样全面详尽。所有内容都来源于我的个人经验和理解，若有不足之处，欢迎通过项目的 GitHub 仓库 [the project's GitHub repository](https://github.com/TCCQUPT/tc_learning_path)提出建议或贡献内容。
