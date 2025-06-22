@@ -33,7 +33,7 @@
 
 1. **阅读贡献指南**
     ![guidelines](../../assets/7-guidance.png)
-2. **“复制原始仓库**
+2. **复制原始仓库**
     ![guidelines](../../assets/1-fork.png)
     ![guidelines](../../assets/2-fork.png)
     ![guidelines](../../assets/3-fork.png)  
