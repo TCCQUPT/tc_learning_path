@@ -22,7 +22,7 @@
     - 这是一个专门收录优质文档和开发者资源的推荐清单，内容不仅实用易懂，还兼具美观与设计感。
     - 该项目包含三个专门针对文档的部分，详见 [Beautiful Docs](https://github.com/matheusfelipeog/beautiful-docs?tab=readme-ov-file#and-now-for-the-docs), [Writing about Documentation](https://github.com/matheusfelipeog/beautiful-docs?tab=readme-ov-file#writing-about-docs) and [Tools for Generating Docs](https://github.com/matheusfelipeog/beautiful-docs?tab=readme-ov-file#generating-docs).
 
-3. [MkDocs](https://github.com/mkdocs/mkdocs) and [catalog](https://github.com/mkdocs/catalog?tab=readme-ov-file#-blogging)
+3. [MkDocs](https://github.com/mkdocs/mkdocs)和 [catalog](https://github.com/mkdocs/catalog?tab=readme-ov-file#-blogging)
 
     - MkDocs 是一款文档生成工具，你现在看到的网站就是通过它搭建的。
 
