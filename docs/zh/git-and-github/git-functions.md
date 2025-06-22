@@ -1,75 +1,75 @@
-# Why We Use Git & GitHub
+# 为什么选择使用 Git 和 GitHub
 
-We've already talked about that Git and GitHub are the foundation of Docs-like-code workflow. To understand why they are so powerful, let's break down how they work and how they enable version control and collaboration. In the first, we need to know the concept of the repository in Git.
+之前我们说过，Git 和 GitHub 是 Docs-like-code 工作流程的核心。想要明白它们有多强大，先得了解它们是怎么运作的，以及它们如何支持版本管理和团队协作。首先，我们要搞清楚 Git 里的“仓库”是什么。
 
-## The Three Layers of Git
+## Git 的三层结构
 
-To contribute to a well-known project or an application's documentation, we submit our suggestions or modifications through Git's three layers.
+要为知名项目或应用的文档做出贡献，我们会通过 Git 的三层结构提交建议或修改。
 
-> Just think of a repository as a project.
+> 可以把仓库简单理解为一个项目。
 
-1. **The Original Repository (on other's github account)**
+1. **原始仓库（位于他人 GitHub 账户下）**
 
-    This is the main project hosted on GitHub (e.g., a popular open-source project like VS Code).
+   这是托管在 GitHub 上的主项目（例如，像 VS Code 这样知名的开源项目）
 
-    - You can view the code and documentation, but you **can't directly edit it**.
-    - To contribute, you need to create your own copy.
+    - 你可以查看代码和文档，但**无法直接修改**。
+    - 如果想贡献内容，需要先创建自己的副本
 
-2. **Your Forked Repository (on your github account)**
+2. **你的派生仓库（位于你的 GitHub 账户下）**
 
-    Forking creates a **personal copy** of the original repository under your GitHub account.
+    派生就是在你自己的账号里复制一份原项目**备份** 
 
-    - This is where you can freely make changes without affecting the original project.
-    - Think of it as your own "sandbox" to experiment and contribute.
+    - 你可以在这里随意修改，完全不会影响原始项目。
+    - 把它当成你的专属“试验场”，用来尝试新想法并贡献成果。
 
-3. **Your Local Repository(on your local computer)**
+3. **你的本地仓库（存放在你的电脑上）**
 
-    This is the copy of the repository on your computer.
+    这是仓库在你电脑上的一份拷贝。
 
-    - You can edit files, test changes, and commit updates here.
-    - Once you're happy with your changes, you can push them back to your forked repository.
+    - 你可以在这里编辑文件、测试修改并提交更新。
+    - 修改完成并确认无误后，可以将更改推送到你的克隆仓库
 
-Then how the three layers enable git achieve version control and collaboration. To understand it, we need to know previously the total workflow of Git and GitHub, as well as some terms.
+那么，这三层结构是如何帮助 Git 实现版本控制和协作的呢？要理解这一点，我们首先需要了解 Git 和 GitHub 的整体工作流程以及相关术语。
 
-## 2. The workflow of Git
+## 2.  Git工作流
 
-The git workflow where we can see convenient collaboration and powerful version control is mainly made by the following steps:
+Git 工作流程中，实现便捷协作和强大版本控制的主要步骤包括
 
-1. **Forking**: When you fork a repository, you create your own copy to work on.
+1. **派生**: 通过派生操作，创建一个属于你自己的仓库副本，用于开发工作。
 
-2. **Cloning**: After forking, you clone the repository to your local computer.
+2. **克隆**: 派生后，将仓库复制到你的本地电脑上。
 
-3. **Branch**: Create a new branch for your changes, following the project’s naming conventions and edit the local files in this branch to implement your updates.
+3. **分支**: 按照项目的命名规范创建一个新分支，在该分支上编辑本地文件，完成你的修改。
 
-4. **Update from Upstream**: Fetch and merge changes from the original repository into your local branch to keep it updated. Then, push these updates from your local repository to your forked repository to maintain compatibility with the latest project state.
+4. **从上游更新**: 将原始仓库的最新改动拉取并合并到你的本地分支，保持同步。然后，将这些更新推送到你的派生仓库，确保与你的项目保持一致。
 
-5. **Pull Origin(seldom use)**: Before starting any new modifications, always pull the latest version from your forked repository to your local environment. This practice is particularly important when you've pushed changes to your forked repository from different devices, ensuring all your work remains synchronized and preventing potential merge conflicts.
+5. **拉取源(较少使用)**: ：在开始新修改前，先从你的派生仓库拉取最新版本到本地环境。特别是在你从不同设备向派生仓库推送过更改时，这一步非常重要，可以保证所有工作同步，避免合并冲突。
 
-6. **Commits**: Each time you save a change, Git creates a "commit" (a snapshot of your project at that moment).
+6. **提交**: 每次保存修改时，Git 会创建一个“提交”，即项目在该时刻的快照。
 
-7. **Pushing Origin**: Once you've made changes, push them to your forked repository.
+7. **推送到源**: 完成修改后，将更改推送到你的派生仓库。
 
-8. **Pull Requests**: When your changes are ready, submit a Pull Request (PR) to the original repository.
+8. **拉取请求**: 当你的修改准备好后，向原始仓库提交拉取请求（PR）。
 
-9. **Merge**: The original repository’s maintainers review your changes and decide whether to merge them.
+9. **合并**: 原始仓库的维护者会审查你的修改，并决定是否将其合并。
 
 ![git-workflow](../../assets/git-workflow.jpg)
 ///caption
-Git Workflow Chart
+Git 工作流程图
 ///
 
-## 3. How Git Enables Version Control and Collaboration
+## 3. Git 如何实现版本控制与协作
 
-Git serves as a crucial tool for version control and collaboration in digital projects. It systematically tracks all changes to project files, allowing developers to manage different versions effectively. Moreover, it enables multiple teams to work concurrently. This two - fold functionality ensures that new features can be safely developed and tested in separate environments before being integrated into the main project.
+Git 是数字项目中不可或缺的版本管理和协作利器。它能够详细记录项目的每次改动，让开发者轻松掌控不同版本。同时，Git 也支持团队成员同步协作，确保新功能能在独立环境中安全开发和测试，最后顺利合并进主项目。
 
-### Version Control
+### 版本控制
 
-Git tracks changes through commits and branches, enabling precise version control. Each commit records who made the change, when it was made, and a description of the modifications.
+Git 通过提交（commit）和分支（branch）来跟踪变更，实现精准的版本管理。每次提交都会记录修改者、修改时间以及变更内容的说明。
 
-### Collaboration
+### 协作
 
-Anyone can contribute to the original repository from anywhere, at any time. By working in their own forked repositories and branches, collaborators avoid interference and enable parallel development.
+任何人都可以随时随地为原始仓库贡献代码。通过在自己的派生仓库和分支上工作，协作者们可以避免互相干扰，实现并行开发。
 
-## Next Steps
+## 下一步
 
-Now that you understand why Git and GitHub are so powerful, let's dive into **how to use them** with GitHub Desktop in the next section.
+既然你已经明白了 Git 和 GitHub 的强大之处，接下来让我们通过 GitHub Desktop，深入学习**如何使用它们**。
