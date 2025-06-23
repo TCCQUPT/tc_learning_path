@@ -42,13 +42,16 @@ GitHub 是基于 Git 构建的平台，提供协作和代码托管的工具：
 
 以下是一些你可能听说过的著名开源项目：
 
-### anki
+**anki**
     ![anki](../../assets/anki-project.png)
-### DeepSeek
+    
+**deepseek** 
     ![deepseek](../../assets/deepseek-project.png)
-### VS Code
+    
+ **VS Code** 
     ![vscode](../../assets/vscode.png)
-### LanguageTool
+    
+ **language-tool-project** 
     ![language-tool-project](../../assets/language-tool-project.png)
 
 ## Git 和 GitHub 与 Docs Like Code 的关系
