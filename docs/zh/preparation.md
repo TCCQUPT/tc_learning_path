@@ -1,6 +1,6 @@
 # 准备工作
 
-我们需要先注册一个Github账号 （**a GitHub account**）并下载两个工具： **GitHub Desktop** and **Visual Studio Code**。
+我们需要先注册一个**Github账号**并下载两个工具： **GitHub Desktop** and **Visual Studio Code**。
 
 ## 注册引导：下载 GitHub Desktop
 
